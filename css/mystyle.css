@@ -1,0 +1,78 @@
+   /********** Base styles **********/
+   * {
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;  
+  }
+  
+  h1 {
+    font-size: 175%;
+    text-align: center;
+    margin: 1em;
+  }
+  
+  h2 {
+    font-size: 125%;
+    text-align: center;
+    margin-right: 5%;
+    width: 150px;
+    border: 1px solid black;
+    position: relative;
+    float: right;
+    margin-bottom: 1px;
+  }
+  #h2-l {
+    background-color: pink;
+  }
+  #h2-c {
+    background-color: tomato;
+  }
+  #h2-r {
+    background-color: khaki;
+  }
+  
+  p {
+    background-color: grey;
+    border: 1px solid black;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    padding: 1em;
+    padding-top: 2.5em;
+  }
+  
+  /* Simple Responsive Framework. */
+  
+  .row {
+      width: 100%;
+    }
+    
+    /********** Desktop devices **********/
+    @media (min-width: 992px) {
+      .col-lg-4{
+        float:left;
+        width: 33.33%;
+      }
+    }
+    
+    /********** Tablet devices **********/
+    @media (min-width: 768px) and (max-width: 991px) {
+      .col-md-6{
+        float: left;
+        width: 50%;
+      }
+      .col-md-12{
+        float: left;
+        width: 105.55%;
+        margin-left: -2.7775%;
+      }
+    }
+    
+    /********** Mobile devices **********/
+    @media (max-width: 767px) {
+      .col-xs{
+        width: 100%;
+      }
+    }

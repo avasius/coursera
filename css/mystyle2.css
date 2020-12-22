@@ -1,0 +1,87 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  font-family: Verdana, Helvetica, sans-serif  
+}
+
+h1 {
+  text-align: center;
+  margin: 1em;
+}
+
+h2 {
+  text-align: center;
+  margin-right: 5%;
+  width: 150px;
+  border: 3px solid black;
+  position: relative;
+  top: 0px;
+  float: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#h2-l {
+  background-color: pink;
+}
+#h2-c {
+  background-color: tomato;
+}
+#h2-r {
+  background-color: khaki;
+}
+
+p {
+  background-color: grey;
+  border: 3px solid black;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 1em;
+  padding-top: 2.5em;
+}
+
+/* Simple Responsive Framework. */
+
+.row {
+    width: 100%;
+  }
+  .section{
+      background-color: purple;
+      border: 1px solid black;
+      width: 90%;
+  }
+  
+  /********** Desktop devices **********/
+  @media (min-width: 992px) {
+    .col-lg-4{
+    background-color: pink;
+          float: left;
+      width: 33.33%;
+    }
+  }
+  
+  /********** Tablet devices **********/
+  @media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6{
+        background-color: green;
+        float: left;
+      width: 50%;
+    }
+    .col-md-12{
+        background-color: green;
+        float: left;
+      width: 100%;
+    }
+  }
+  
+  /********** Mobile devices **********/
+  @media (max-width: 767px) {
+    .col-xs{
+        background-color: green;
+        float: left;
+      width: 100%;
+    }
+  }
